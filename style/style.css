@@ -70,9 +70,8 @@ hr.dotted-line {
     height: .5px;
     margin-top: 2.5em;
 }
-.html5-logo {
-  width: 9em;
-  height: auto;
+.hide {
+	display: none;
 }
 /*page container*/
 .container {
