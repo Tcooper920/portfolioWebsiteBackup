@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-189128502-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-189128502-2');
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me</title>
+<link href="style/style.css" rel="stylesheet" type="text/css" media="all"/>
+<style type="text/css"></style>
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="container">
+	<div id="mobile_nav_container"><span id="hamburger_icon">&#x2630;</span></div>
+  <nav id="mobile_navigation">
+    <ul>
+      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="about_thomas_cooper.html">About</a></li>
+      <li><a href="images/Resumes/Thomas_Cooper_Resume.pdf" target="_blank">Resume</a></li>
+      <li><a id="current_page_mobile_nav" href="contact.html">Contact</a></li>
+      <li><a href="https://www.paypal.me/ThomasCooperGDesign">Payments</a></li>
+      <li><a href="illustrations.html">Illustration</a></li>
+    </ul>
+  </nav>
+  <div class="header">
+    <picture>
+      <source media="(max-width:540px)" srcset="images/cooperart_Thomas_Cooper_mobile.png" alt="Thomas Cooper's Portfolio" class="Banner"/>
+      <img src="images/cooperart_Thomas_Cooper.png" alt="Thomas Cooper's Portfolio" class="Banner"/> </picture>
+  </div>
+  <nav>
+    <div class="menu_bar"> 
+      <a href="index.html"><span class="portfolio_button">Portfolio</span></a> <a href="about_thomas_cooper.html"><span class="about_button">About</span></a> <a href="images/Resumes/Thomas_Cooper_Resume.pdf" target="_blank"><span class="resume_button">Resume</span></a> <a href="contact.html"><span class="contact_button" id="current_page">Contact</span></a> <a href="https://www.paypal.me/ThomasCooperGDesign" target="_blank"><span class="behance_button">Payments</span></a> <a href="illustrations.html"><span class="myfont_button">Illustration</span></a> </div>
+    <!--end class "menu bar"--> 
+  </nav>
+  <div id="contact_container">
+    <div class="contact_txt">
+      <h1>Contact</h1>
+      <p>For project requests or other concerns, feel free to contact me at <strong><a href="mailto:&#099;&#111;&#111;&#112;&#101;&#114;&#103;&#100;&#101;&#115;&#105;&#103;&#110;&#101;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#099;&#111;&#111;&#112;&#101;&#114;&#103;&#100;&#101;&#115;&#105;&#103;&#110;&#101;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></strong> below.</p>
+    </div>
+    
+    <!-----------------------form----------------------------->
+    
+    <form action="php/emailform.php" method="post" id="email_form">
+      <label id="email_label">Email address:
+        <input type="text" name="email" required="required" />
+      </label><label id="name_label">Name:
+        <input type="text" name="name"  required="required"/>
+      </label>
+      <br />
+      <textarea name="message" rows="10" cols="70" id="message" required></textarea>
+      <input type="submit" value="Send" id="submit_btn"/>
+    </form>
+  </div>
+  <footer>
+    <address class="footer_contact_info">
+    <div>Thomas Cooper</div>
+    <hr class="address_divider">
+    <a href="tel:302.750.8812">302.750.8812</a>
+    <hr class="address_divider">
+    <a href="mailto:&#099;&#111;&#111;&#112;&#101;&#114;&#103;&#100;&#101;&#115;&#105;&#103;&#110;&#101;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#099;&#111;&#111;&#112;&#101;&#114;&#103;&#100;&#101;&#115;&#105;&#103;&#110;&#101;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+    </address>
+    <address class="footer_social_media_tags">
+    <a href="https://www.instagram.com/tomycoop/?hl=en" target="_blank"> <i class="share-button fab fa-instagram"></i></a> <a href="https://www.linkedin.com/in/thomas-cooper-designer/" target="_blank"> <i class="share-button fab fa-linkedin"></i></a> <a href="https://github.com/Tcooper920" target="_blank"><i class="share-button fab fa-github-square"></i></a>
+    </address>
+    <div id="footer-bottom-bar"> Website coded, designed, and developed by Thomas Cooper. </div>
+  </footer>
+</div>
+<!--end class "container"-->
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+  crossorigin="anonymous" type="text/javascript"></script><!--jquery CDN link--> 
+<script type="text/javascript" src="javascript/populate_popups_sticky_share_buttons_sticky_nav_bar.js"></script><!--link to sticky Share Buttons jQuery (.js file)-->
+</body>
+</html>
