@@ -3,3 +3,5 @@
 
 # ignore video folder with files typically exceeding 100MB (too large for gitHub)
 /videos
+
+paypal-banner.ai

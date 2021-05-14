@@ -441,6 +441,15 @@ a figure {
   background-color: #b5a1bf;
   cursor: pointer;
 }
+.error_message {
+  color: #ff671b;
+  font-weight: bold;
+  display: block;
+  margin-bottom: .5rem;
+  background-color: #ffede3;
+  padding: .5rem .5rem .5rem .7rem;
+  border-left: 3px solid #ff671b;
+}
 /*pop-up*****************************************************************/
 .overlay {
   position: fixed;
