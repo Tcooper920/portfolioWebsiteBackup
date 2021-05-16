@@ -49,17 +49,17 @@
     </div>
     
     <!-----------------------form----------------------------->
-    <div id="error"></div>
+    <div id="error_container"></div>
     <form action="php/emailform.php" method="post" id="email_form">
       <label id="email_label">Email address:
-        <input id="email" type="text" name="email" />
+        <input id="email" class="form_field" type="text" name="email" />
       </label><label id="name_label">Name:
-        <input id="name" type="text" name="name" />
+        <input id="name" class="form_field" type="text" name="name" />
       </label>
 	  <label class="hide">Leave this field empty:</label>
 	  <input class="hide" type="text" name="phoneNumber6tzPKQkla" autocomplete="off" />
       <br />
-      <textarea name="message" rows="10" cols="70" id="message" ></textarea>
+      <textarea placeholder="Message" name="message" rows="10" cols="70" id="message" class="form_field"></textarea>
       <button type="submit" id="submit_btn">Send</button>
     </form>
   </div>
