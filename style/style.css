@@ -65,13 +65,13 @@ hr {
   background-color: #e0dfdf;
 }
 hr.dotted-line {
-    background: none;
-    border-top: 2px dotted #e0dfdf;
-    height: .5px;
-    margin-top: 2.5em;
+  background: none;
+  border-top: 2px dotted #e0dfdf;
+  height: .5px;
+  margin-top: 2.5em;
 }
 .hide {
-	display: none;
+  display: none;
 }
 /*page container*/
 .container {
@@ -372,15 +372,15 @@ a figure {
   text-align: left;
 }
 #email_label {
-  display: inline-block;
   text-align: left;
+  display: inline-block;
   width: 50%;
   padding: 0 .5em 1em 0;
   box-sizing: border-box;
 }
 #name_label {
-  display: inline-block;
   text-align: left;
+  display: inline-block;
   width: 50%;
   padding: 0 0em 1em .5em;
   box-sizing: border-box;
@@ -388,13 +388,7 @@ a figure {
 #email_label input[type="text"], #name_label input[type="text"] {
   -webkit-appearance: none;
   margin-top: .5em;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #D6D6D6;
-  border-bottom: 2px solid #D6D6D6;
   height: 3em;
-  width: 100%;
   padding-left: .5em;
   box-sizing: border-box;
 }
@@ -405,12 +399,17 @@ a figure {
 #message {
   -webkit-appearance: none;
   display: block;
+  padding: .5em 0 0 .5em;
+  box-sizing: border-box;
+}
+.form_field {
+  width: 100%;
+  text-align: left;
+  border: 2px solid #d7e5f1;
+  background-color: #f6fbff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid #D6D6D6;
-  border-bottom: 2px solid #D6D6D6;
-  width: 100%;
 }
 /*google recaptcha form security code at the bottom of contact page*/
 .g-recaptcha div {
@@ -441,6 +440,9 @@ a figure {
   background-color: #b5a1bf;
   cursor: pointer;
 }
+#error_container {
+	padding-bottom: 1rem;
+}
 .error_message {
   color: #ff671b;
   font-weight: bold;
@@ -449,6 +451,10 @@ a figure {
   background-color: #ffede3;
   padding: .5rem .5rem .5rem .7rem;
   border-left: 3px solid #ff671b;
+}
+.field_with_error_styling {
+	background-color: #ffede3;
+	border-color: rgb(255 184 148);
 }
 /*pop-up*****************************************************************/
 .overlay {
@@ -592,17 +598,17 @@ a figure {
   border-bottom: 7px solid #E6E7E8;
 }
 p.privacy-message {
-	font-weight: bold;
-	color: #ff671b;
-	padding: .5rem 0 .5rem 0;
-	border: solid #ff671b;
-	text-align: center;
-	border-width: 1px 0 1px 0;
-	margin-top: .5rem;
+  font-weight: bold;
+  color: #ff671b;
+  padding: .5rem 0 .5rem 0;
+  border: solid #ff671b;
+  text-align: center;
+  border-width: 1px 0 1px 0;
+  margin-top: .5rem;
 }
 .privacy-message:before {
-	content: "\26A0";
-	padding-right: .5rem;
+  content: "\26A0";
+  padding-right: .5rem;
 }
 /*back to top button*/
 #back_to_top {
@@ -716,10 +722,6 @@ p.privacy-message {
     font-size: 1em;
     width: 18em;
   }
-  /* about screen form */
-  #name_label input, #email_label input {
-    width: 8.5em;
-  }
   #footer-bottom-bar a {
     color: #CDCDCD;
     clear: both;
@@ -830,7 +832,7 @@ p.privacy-message {
   }
   .popup {
     width: 100%;
-	max-height: none;
+    max-height: none;
     height: 100%;
     margin-top: 0px;
     -webkit-border-radius: 0px;
