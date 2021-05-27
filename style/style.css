@@ -411,12 +411,6 @@ a figure {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/*google recaptcha form security code at the bottom of contact page*/
-.g-recaptcha div {
-  float: left;
-  clear: both;
-  margin-bottom: 1em;
-}
 #submit_btn {
   -webkit-appearance: none;
   font-size: 1rem;
@@ -688,6 +682,7 @@ p.privacy-message {
   }
   .education_flex_container > a {
     max-width: initial;
+	  margin-top: .5rem;
   }
 }
 @media screen and (max-width:620px) {
@@ -824,7 +819,7 @@ p.privacy-message {
 }
 @media screen and (max-width:375px) {
   .popup h2 {
-    font-size: 1em;
+    font-size: 1.5em;
     width: 18em;
   }
   .popup .popup_content {
