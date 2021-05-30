@@ -1,8 +1,15 @@
 // JavaScript Document
-/* global $, document, jQuery, window*/
+/* global $, document, jQuery, window */
 jQuery(document).ready(function () {
   /* close popup windows (href anchor tags) when site is first visited or when the page is reloaded*/
   document.location.href = "#";
+	
+  //////////////////////////////////////////////////////////// Set image backgrounds to loading gif image until loaded
+  let allUnloadedImageTags = document.querySelectorAll(".popup img");
+  
+  for (let i = 0; i < allUnloadedImageTags.length; i++) {
+	  allUnloadedImageTags[i].setAttribute("src", "images/loading_icon.gif");
+  }
 
   /////////////////////////////////////////////////////////////////////////////////////////////////////////// sticky nav bar
 
@@ -69,8 +76,9 @@ jQuery(document).ready(function () {
   function loadImagesPopup(pieceNumber) {
     var artwork = document.getElementsByClassName("portfolio-piece-" + pieceNumber)[0];
     var imgEl = artwork.getElementsByTagName("img");
+	  
     for (var i = 0; i < imgEl.length; i++) {
-      if (imgEl[i].getAttribute("data-src")) {
+	  if (imgEl[i].getAttribute("data-src")) {
         imgEl[i].setAttribute("src", imgEl[i].getAttribute("data-src"));
         imgEl[i].removeAttribute("data-src");
       }
