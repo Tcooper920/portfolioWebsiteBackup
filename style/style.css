@@ -73,6 +73,9 @@ hr.dotted-line {
 .hide {
   display: none;
 }
+.invisible {
+	visibility: hidden;
+}
 /*page container*/
 .container {
   width: 60rem;
@@ -355,7 +358,13 @@ a figure {
   margin-bottom: .8rem;
 }
 .education_flex_container > a {
-  max-width: 10rem;
+  max-width: 11rem;
+  min-width: 11rem;
+  background: #f1f1f1;
+  padding: .8rem;
+  margin-top: .5rem;
+  border-left: 3px solid #3585c3;
+  border-radius: 3px;
 }
 #contact_container {
   width: 30em;
@@ -639,8 +648,7 @@ p.privacy-message {
 .back_button:hover, .forward_button:hover {
   opacity: .5;
 }
-/* media queries
-**************************************************************************************/
+/* media queries **************************************************************************************/
 @media screen and (min-width:1750px) {
   .popup {
     width: 40%;
@@ -654,6 +662,17 @@ p.privacy-message {
 @media screen and (min-width:950px) {
   .sharebuttons {
     margin-left: 3em;
+  }
+}
+@media screen and (max-width: 915px) {
+  .education_flex_container {
+    flex-direction: column;
+    line-height: 1.3rem;
+    margin-bottom: 0;
+  }
+  .education_flex_container > a {
+    max-width: initial;
+    margin-top: .8rem;
   }
 }
 @media screen and (max-width:800px) {
@@ -675,15 +694,6 @@ p.privacy-message {
   .about_flex_container {
     flex-direction: column;
   }
-  .education_flex_container {
-    flex-direction: column;
-    line-height: 1.3rem;
-    margin-bottom: 0;
-  }
-  .education_flex_container > a {
-    max-width: initial;
-	  margin-top: .5rem;
-  }
 }
 @media screen and (max-width:620px) {
   .menu_bar {
@@ -697,6 +707,9 @@ p.privacy-message {
   #profile_pic {
     margin-bottom: 1.5em;
     width: 100%;
+  }
+  .profile_pic_container {
+    padding: 0;		
   }
 }
 @media screen and (max-width:480px) {
