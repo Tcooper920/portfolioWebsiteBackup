@@ -11,20 +11,6 @@ jQuery(document).ready(function () {
 	  allUnloadedImageTags[i].setAttribute("src", "images/loading_icon.gif");
   }
 
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////// sticky nav bar
-
-  var stickyNavBar = $(".menu_bar").offset().top;
-
-  $(window).scroll(function () {
-    var scrollPos = $(window).scrollTop();
-
-    if (scrollPos >= stickyNavBar) {
-      $(".menu_bar").addClass("fixed_menu");
-    } else {
-      $(".menu_bar").removeClass("fixed_menu");
-    }
-  });
-
   /////////////////////////////////////////////////////////////////////////////// sticky share buttons (social media buttons)
 
   var shareButtons = document.getElementsByClassName("sharebuttons");
@@ -43,34 +29,6 @@ jQuery(document).ready(function () {
       }
     });
   }
-
-
-  ////////////////////////////////////////////////////////////////////////////////////////////////// toggle side menu on mobile
-
-  const hamburgerMenu = document.getElementById("hamburger_icon");
-  const navigation = document.getElementById("mobile_navigation");
-
-  // Open mobile nav menu on hamburger button click
-  hamburgerMenu.addEventListener("click", function () {
-    navigation.style.paddingBottom = "100%";
-  });
-
-  /* If clicking outside of the nav menu, and if the nav menu is already open,
-  close the mobile nav menu */
-  document.addEventListener("click", function () {
-    if (navigation.clientHeight != "0") {
-      navigation.style.paddingBottom = "0%";
-    }
-  });
-
-  /* If window grows larger than 700px wide, hide mobile nav dropdown menu */
-  function setBottomPaddingToZero() {
-    if (window.innerWidth > 440) {
-      navigation.style.paddingBottom = "0%";
-    }
-  }
-
-  window.onresize = setBottomPaddingToZero;
 
   /////////////////////////////// Lazyload: Load images into pop-ups for each "figure" thumbnail that is clicked (no more than 12 per page)
   function loadImagesPopup(pieceNumber) {
