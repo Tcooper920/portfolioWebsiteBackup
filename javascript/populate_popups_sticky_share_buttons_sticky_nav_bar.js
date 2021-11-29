@@ -8,7 +8,7 @@ jQuery(document).ready(function () {
   let allUnloadedImageTags = document.querySelectorAll(".popup img");
   
   for (let i = 0; i < allUnloadedImageTags.length; i++) {
-	  allUnloadedImageTags[i].setAttribute("src", "images/loading_icon.gif");
+	allUnloadedImageTags[i].setAttribute("src", "images/loading_icon.gif");
   }
 
   /////////////////////////////////////////////////////////////////////////////// sticky share buttons (social media buttons)
@@ -34,9 +34,9 @@ jQuery(document).ready(function () {
   function loadImagesPopup(pieceNumber) {
     var artwork = document.getElementsByClassName("portfolio-piece-" + pieceNumber)[0];
     var imgEl = artwork.getElementsByTagName("img");
-	  
+
     for (var i = 0; i < imgEl.length; i++) {
-	  if (imgEl[i].getAttribute("data-src")) {
+      if (imgEl[i].getAttribute("data-src")) {
         imgEl[i].setAttribute("src", imgEl[i].getAttribute("data-src"));
         imgEl[i].removeAttribute("data-src");
       }
