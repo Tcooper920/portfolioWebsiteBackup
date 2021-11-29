@@ -133,6 +133,7 @@ hr.dotted-line {
   padding-bottom: 2.5em;
   padding-top: 2.5em;
   position: relative;
+  min-height: calc(100vh - 20rem); /*keep footer stuck to bottom of window*/
 }
 footer {
   background-color: #484848;
