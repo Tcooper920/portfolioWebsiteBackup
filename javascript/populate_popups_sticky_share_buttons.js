@@ -1,7 +1,7 @@
 // JavaScript Document
 /* global $, document, jQuery, window */
 jQuery(document).ready(function () {
-  /* close popup windows (href anchor tags) when site is first visited or when the page is reloaded*/
+  /* close popup windows (href anchor tags) when site is first visited or when the page is reloaded */
   document.location.href = "#";
 	
   //////////////////////////////////////////////////////////// Set image backgrounds to loading gif image until loaded
