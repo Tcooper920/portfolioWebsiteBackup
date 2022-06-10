@@ -119,6 +119,7 @@ hr.dotted-line {
 }
 .invisible {
 	visibility: hidden;
+	cursor: inherit;
 }
 /* page container */
 .container {
@@ -196,11 +197,11 @@ figure {
 figure:hover {
   opacity: .7;
   z-index: 0;
-  -webkit-animation: hovermove .7s;
-  -moz-animation: hovermove .7s;
-  -ms-animation: hovermove .7s;
-  -o-animation: hovermove .7s;
-  animation: hovermove .7s;
+  -webkit-animation: hovermove .7s infinite alternate;
+  -moz-animation: hovermove .7s infinite alternate;
+  -ms-animation: hovermove .7s infinite alternate;
+  -o-animation: hovermove .7s infinite alternate;
+  animation: hovermove .7s infinite alternate;
 }
 #responsive-figure-container {
   text-align: center;
@@ -306,7 +307,7 @@ a figure {
 }
 .fixed { /* the share buttons use javascript to change their class to this (.fixed) to stick to top of page on scroll */
   position: fixed;
-  top: 7.5em;
+  top: 2.5rem;
 }
 #about_container {
   background: white;
@@ -328,6 +329,7 @@ border-radius: 5px;
 }
 #profile_pic {
   width: 100%;
+  height: auto;
   border-radius: 5px;
 }
 .description {
@@ -470,6 +472,7 @@ border-radius: 5px;
   background: #fff;
   border-radius: 5px;
   width: 80%;
+  max-width: 60rem;
   max-height: 95%;
   position: relative;
   overflow-y: scroll;
@@ -481,10 +484,12 @@ border-radius: 5px;
   transition: ease all .5s;
 }
 .popup h2 {
-  margin-top: 1.5em;
-  margin-bottom: .3em;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
   color: #333;
   text-align: left;
+  border-bottom: 1px dotted #B4B4B4;
 }
 .popup h3 {
   color: white;
@@ -510,23 +515,29 @@ border-radius: 5px;
   text-align: center;
 }
 .pop_up_description {
-  padding-left: 3em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #EFEFEF;
   border-bottom: 1px solid #B4B4B4;
 }
 .piece_description {
+  font-size: 1rem;
   padding-left: 15%;
   padding-right: 15%;
-  padding-top: 2.5em;
-  padding-bottom: 2em;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
   margin-top: 4rem;
   background-color: #F9F9F9;
 }
 .piece_description p {
-  padding-bottom: 1em;
-  color: #58595b;
+  padding-bottom: 1rem;
+  color: #3b3b3b;
+  line-height: unset;
+}
+.piece_description a {
+  font-weight: bold;
 }
 /* remove top margin spacing */
 .remove-top-margin {
@@ -659,13 +670,7 @@ p.privacy-message {
     margin-left: 3em;
   }
 }
-@media screen and (max-width:800px) {
-  .container {
-    padding-top: 4rem;
-  }
-  .sharebuttons {
-    display: none;
-  }
+@media screen and (max-width:900px) {
   #mobile-nav-hamburger {
     flex-direction: row;
     display: inline-flex;
@@ -693,7 +698,7 @@ p.privacy-message {
   }
   nav {
     margin: 0;
-	margin-top: 3.5rem;
+	  margin-top: 3.5rem;
     background:transparent;
     position: fixed;
     width: 100%;
@@ -727,6 +732,17 @@ p.privacy-message {
   #logo {
     display: none;
   }
+  .container {
+    padding-top: 4rem;
+  }
+}
+@media screen and (max-width:800px) {
+  .sharebuttons {
+    display: none;
+  }
+  #about_container {
+    margin: 1rem;
+  }
 }
 @media screen and (max-width: 780px) {
   .education_flex_container {
@@ -758,7 +774,6 @@ p.privacy-message {
   }
   .popup h2 {
     font-size: 1em;
-    width: 18em;
   }
   #footer-bottom-bar a {
     color: #CDCDCD;
@@ -768,6 +783,12 @@ p.privacy-message {
     padding-top: 1em;
     padding-bottom: 1em;
   }
+  figure {
+    border-bottom: 2px solid #4b3951;
+  }
+  .portfolio_image {
+    border-bottom: 0;
+  }
   figure img {
     width: 12em;
     height: auto;
@@ -776,10 +797,10 @@ p.privacy-message {
     display: none;
   }
   figcaption {
-    font-size: .7em;
+    display: none;
   }
   #contact_container {
-    width: 100%;
+    margin: 1rem;
   }
   #email_label, #name_label {
     padding: 0 0 1em 0;
