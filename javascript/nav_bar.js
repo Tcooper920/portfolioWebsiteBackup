@@ -3,7 +3,7 @@ const navigation = document.getElementById("navigation");
 
 // Open mobile nav menu on hamburger button click
 hamburgerMenu.addEventListener("click", function () {
-	navigation.style.paddingBottom = "100%";
+	navigation.style.paddingBottom = "24rem";
 });
 
 /* If clicking outside of the nav menu, and if the nav menu is already open, close the mobile nav menu */
