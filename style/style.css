@@ -352,9 +352,8 @@ a figure {
 .sharebuttons {
   display: none;
   width: 3rem;
-  float: left;
   margin-left: 1rem;
-  position: absolute;
+  position: fixed;
   text-align: center;
   color: white;
 }
@@ -366,10 +365,6 @@ a figure {
 }
 .share-button:hover {
   opacity: 0.5;
-}
-.fixed {
-  position: fixed;
-  top: 2.5rem;
 }
 #about_container {
   background: white;
