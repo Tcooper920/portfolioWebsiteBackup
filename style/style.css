@@ -665,6 +665,9 @@ a.close {
   padding-left: 1rem;
   box-sizing: border-box;
 }
+.remove-bottom-margin {
+  margin-bottom: 0;
+}
 p.privacy-message {
   font-weight: bold;
   color: #ff671b;
