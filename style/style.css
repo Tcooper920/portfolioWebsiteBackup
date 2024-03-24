@@ -653,6 +653,12 @@ a.close {
   -moz-box-shadow: 0px 0px 14px 0px rgba(181, 181, 181, 0.76);
   box-shadow: 0px 0px 14px 0px rgba(181, 181, 181, 0.76);
 }
+/* This class adds space between popup images and the sides of popup windows */
+.add-x-padding {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
 p.privacy-message {
   font-weight: bold;
   color: #ff671b;
