@@ -692,8 +692,8 @@ p.privacy-message {
   color: #844dca;
   font-weight: bold;
 }
-.portfolio_page_numbers > * {
-  margin: 0.5rem 1rem 0.5rem 1rem;
+.portfolio_page_numbers > a {
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 .back_button,
 .forward_button {
