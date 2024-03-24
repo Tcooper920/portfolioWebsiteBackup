@@ -645,6 +645,12 @@ a.close {
   border-right: 7px solid #e6e7e8;
   border-bottom: 7px solid #e6e7e8;
 }
+/* Images that need a drop shadow can use this class */
+.add-drop-shadow-light {
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(181, 181, 181, 0.76);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(181, 181, 181, 0.76);
+  box-shadow: 0px 0px 14px 0px rgba(181, 181, 181, 0.76);
+}
 p.privacy-message {
   font-weight: bold;
   color: #ff671b;
