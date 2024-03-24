@@ -255,6 +255,13 @@ figure img {
   max-width: 10rem;
   height: auto;
 }
+figure .ai,
+figure .ps,
+figure .ind,
+figure .dw,
+figure .ae {
+  color: gray;
+}
 #responsive-figure-container {
   margin: 0 auto;
   display: flex;
