@@ -2,12 +2,12 @@ const hamburgerMenu = document.getElementById("hamburger-icon");
 const navigation = document.getElementById("navigation");
 
 // Open mobile nav menu on hamburger button click
-hamburgerMenu.addEventListener("click", function () {
+hamburgerMenu.addEventListener("click", () => {
 	navigation.style.paddingBottom = "24rem";
 });
 
 /* If clicking outside of the nav menu, and if the nav menu is already open, close the mobile nav menu */
-document.addEventListener("click", function () {
+document.addEventListener("click", () => {
 	if (navigation.clientHeight != "0") {
 		navigation.style.paddingBottom = "0%";
 	}
