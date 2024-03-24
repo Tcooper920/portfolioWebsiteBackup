@@ -11,25 +11,6 @@ jQuery(document).ready(function () {
 	allUnloadedImageTags[i].setAttribute("src", "images/loading_icon.gif");
   }
 
-  /////////////////////////////////////////////////////////////////////////////// sticky share buttons (social media buttons)
-
-  var shareButtons = document.getElementsByClassName("sharebuttons");
-
-  if (shareButtons.length !== 0) {
-
-    var shareButtonsOffset = $(".sharebuttons").offset().top;
-
-    $(window).scroll(function () {
-      var scrollPos = $(window).scrollTop();
-
-      if (scrollPos >= shareButtonsOffset) {
-        $(".sharebuttons").addClass("fixed");
-      } else {
-        $(".sharebuttons").removeClass("fixed");
-      }
-    });
-  }
-
   /////////////////////////////// Lazyload: Load images into pop-ups for each "figure" thumbnail that is clicked (no more than 12 per page)
   function loadImagesPopup(pieceNumber) {
     var artwork = document.getElementsByClassName("portfolio-piece-" + pieceNumber)[0];
