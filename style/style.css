@@ -262,12 +262,12 @@ figure img {
   flex-wrap: wrap;
   justify-content: center;
 }
-/* Artwork image in thumbnail */
 .portfolio_image {
   display: block;
   border-bottom: 0;
 }
 figcaption {
+  display: none;
   font-size: 0.9rem;
   font-weight: bolder;
   background-color: white;
@@ -277,12 +277,14 @@ a figure {
   color: #58595b;
 }
 .thumbnail_divider {
+  display: none;
   margin-top: 0.5em;
   border: 0px;
   height: 1px;
   background-color: #e0dfdf;
 }
 .programs {
+  display: none;
   font-size: 0.7rem;
   border-right: 1px solid #e0dfdf;
   display: block;
@@ -292,6 +294,7 @@ a figure {
   margin-right: 0.5em;
 }
 .project_type {
+  display: none;
   font-size: 0.7rem;
   font-weight: 400;
   padding-top: 0.5em;
@@ -319,7 +322,6 @@ a figure {
 .ae {
   color: #d4a5f9;
 }
-/* Box around Adobe software used at top of pop-ups */
 .pop_up_description .ai,
 .pop_up_description .ps,
 .pop_up_description .ind,
@@ -422,22 +424,18 @@ a figure {
 }
 .contact_txt {
   width: 100%;
-  padding-bottom: 1.5rem;
   text-align: left;
 }
-#email_label {
-  text-align: left;
-  display: inline-block;
-  width: 50%;
-  padding: 0 0.5em 1em 0;
-  box-sizing: border-box;
-}
+#email_label,
 #name_label {
   text-align: left;
   display: inline-block;
-  width: 50%;
-  padding: 0 0em 1em 0.5em;
+  width: 100%;
+  padding: 0rem 0rem 0.5rem 0rem;
   box-sizing: border-box;
+}
+#name_label {
+  padding: 0rem 0rem 1rem 0rem;
 }
 #email_label input[type="text"],
 #name_label input[type="text"] {
@@ -523,12 +521,12 @@ a.close {
   margin-right: -0.2rem;
 }
 .popup {
-  width: 100%;
   margin: 0 auto;
   background: #fff;
-  border-radius: 5px;
+  border-radius: 0px;
   max-width: 60rem;
-  max-height: 95%;
+  height: 100%;
+  max-height: none;
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -568,6 +566,7 @@ a.close {
 }
 .popup .popup_content {
   text-align: center;
+  padding: 0.8rem;
 }
 .pop_up_description {
   padding-left: 1.5rem;
@@ -713,6 +712,16 @@ p.privacy-message {
   opacity: 0.5;
 }
 /* Media queries **************************************************************************************/
+@media screen and (min-width: 376px) {
+  .popup .popup_content {
+    padding: 0;
+  }
+  .popup {
+    width: 100%;
+    height: auto;
+    max-height: 95%;
+  }
+}
 @media screen and (min-width: 481px) {
   a.close {
     margin-top: auto;
@@ -730,6 +739,20 @@ p.privacy-message {
   }
   figure img {
     max-width: fit-content;
+  }
+  .thumbnail_divider,
+  .programs,
+  .project_type,
+  figcaption {
+    display: block;
+  }
+  #email_label {
+    width: 50%;
+    padding: 0rem 0.5rem 1rem 0rem;
+  }
+  #name_label {
+    width: 50%;
+    padding: 0rem 0rem 0.5rem 0.5rem;
   }
 }
 @media screen and (min-width: 601px) {
@@ -749,6 +772,7 @@ p.privacy-message {
   .popup {
     width: 80%;
     margin-top: 1.5em;
+    border-radius: 5px;
   }
 }
 @media screen and (min-width: 781px) {
@@ -817,50 +841,5 @@ p.privacy-message {
 @media screen and (min-width: 1750px) {
   .popup {
     width: 40%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .thumbnail_divider,
-  .programs,
-  .project_type {
-    display: none;
-  }
-  figcaption {
-    display: none;
-  }
-  #email_label,
-  #name_label {
-    padding: 0 0 1em 0;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .popup .popup_content {
-    padding: 0.8rem;
-  }
-  .popup {
-    width: 100%;
-    max-height: none;
-    height: 100%;
-    margin-top: 0px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-  }
-  .pop_up_description {
-    margin-bottom: 0px;
-    padding-left: 1.5rem;
-  }
-  .pop_up_description .ai,
-  .pop_up_description .ps,
-  .pop_up_description .ind,
-  .pop_up_description .dw,
-  .pop_up_description .ae {
-    padding: 0.4rem;
-  }
-  footer,
-  footer a {
-    float: none;
-    text-align: center;
   }
 }
