@@ -3,6 +3,12 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --primary-brand-color: #844dca;
+  --secondary-brand-color: #df7b17;
+  --link-color: #3585c3;
+  --standard-text-color: #3b3b3b;
+}
 @keyframes hovermove {
   from {
     transform: translateY(0px);
@@ -34,17 +40,17 @@ h1,
 h2,
 h3,
 h4 {
-  color: #844dca;
+  color: var(--primary-brand-color);
 }
 h1 {
-  color: #3b3b3b;
+  color: var(--standard-text-color);
   font-size: 2.9rem;
   text-align: left;
   font-weight: 600;
   margin-bottom: 1.3rem;
 }
 h2 {
-  color: #3b3b3b;
+  color: var(--standard-text-color);
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1.3rem;
@@ -55,12 +61,12 @@ h3 {
   margin-bottom: 1.3rem;
 }
 p {
-  color: #3b3b3b;
+  color: var(--standard-text-color);
   margin-bottom: 1.3rem;
   line-height: 1.5rem;
 }
 a {
-  color: #3585c3;
+  color: var(--link-color);
   text-decoration: none;
 }
 #logo {
@@ -132,15 +138,15 @@ nav a {
   text-align: center;
 }
 nav a:hover {
-  color: #844dca;
+  color: var(--primary-brand-color);
   font-weight: bold;
 }
 .active {
-  border-bottom: 0.2rem solid #844dca;
+  border-bottom: 0.2rem solid var(--primary-brand-color);
   font-weight: bold;
 }
 .active a {
-  color: #844dca;
+  color: var(--primary-brand-color);
 }
 .white-logo {
   width: 15rem;
@@ -411,7 +417,7 @@ a figure {
   background: #f1f1f1;
   padding: 0.8rem;
   margin-top: 0.8rem;
-  border-left: 3px solid #3585c3;
+  border-left: 3px solid var(--link-color);
   border-radius: 3px;
 }
 #contact_container {
@@ -469,7 +475,7 @@ button {
   font-size: 1rem;
   font-weight: bold;
   margin-top: 2em;
-  background-color: #df7b17;
+  background-color: var(--secondary-brand-color);
   border: 0;
   border: 0.1rem solid #d37211;
   color: white;
@@ -695,14 +701,14 @@ p.privacy-message {
   border-radius: 5px;
 }
 .portfolio_page_numbers a {
-  color: #3b3b3b;
+  color: var(--standard-text-color);
 }
 .portfolio_page_numbers a:hover {
-  color: #844dca;
+  color: var(--primary-brand-color);
   font-weight: bold;
 }
 .portfolio_page_numbers .active {
-  color: #844dca;
+  color: var(--primary-brand-color);
   font-weight: bold;
 }
 .portfolio_page_numbers > a {
@@ -746,7 +752,7 @@ p.privacy-message {
   }
   figure {
     margin: 1rem;
-    border-bottom: 0.2rem solid #844dca;
+    border-bottom: 0.2rem solid var(--primary-brand-color);
   }
   .portfolio_image {
     border-bottom: 1px solid #e0dfdf;
@@ -833,7 +839,7 @@ p.privacy-message {
   }
   nav a {
     padding: 0rem 1rem 0rem 1rem;
-    color: #3b3b3b;
+    color: var(--standard-text-color);
     text-decoration: none;
   }
 }
