@@ -9,22 +9,6 @@
   --link-color: #3585c3;
   --standard-text-color: #3b3b3b;
 }
-@keyframes hovermove {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-7px);
-  }
-}
-@-webkit-keyframes hovermove {
-  from {
-    -webkit-transform-transform: translateY(0px);
-  }
-  to {
-    -webkit-transform-transform: translateY(-7px);
-  }
-}
 body {
   background: repeating-linear-gradient(
     45deg,
@@ -234,9 +218,11 @@ address > * {
 #footer-bottom-bar a {
   color: #cdcdcd;
 }
+a.button {
+  margin: 0.5rem;
+}
 figure {
   text-align: left;
-  margin: 0.5rem;
   background-color: #d0d1d2;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -246,16 +232,15 @@ figure {
   -webkit-box-shadow: 0px 0px 17px 5px rgb(81 67 86 / 44%);
   -moz-box-shadow: 0px 0px 17px 5px rgb(81 67 86 / 44%);
   box-shadow: 0px 0px 17px 5px rgb(81 67 86 / 44%);
-  transition: opacity 0.5s;
 }
-figure:hover {
+a.button:hover {
   outline: 1px solid black;
   z-index: 0;
-  -webkit-animation: hovermove 0.7s infinite alternate;
-  -moz-animation: hovermove 0.7s infinite alternate;
-  -ms-animation: hovermove 0.7s infinite alternate;
-  -o-animation: hovermove 0.7s infinite alternate;
-  animation: hovermove 0.7s infinite alternate;
+  transform: scale(1.05);
+  transition: transform .5s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 figure img {
   max-width: 10rem;
@@ -753,8 +738,10 @@ p.privacy-message {
   .popup h2 {
     font-size: 2rem;
   }
-  figure {
+  a.button {
     margin: 1rem;
+  }
+  figure {
     border-bottom: 0.2rem solid var(--primary-brand-color);
   }
   .portfolio_image {
