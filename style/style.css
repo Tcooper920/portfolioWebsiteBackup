@@ -125,6 +125,14 @@ nav a:hover {
   color: var(--primary-brand-color);
   font-weight: bold;
 }
+.screen_behind_mobile_nav {
+  position: fixed;
+  background: black;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  opacity: .5;
+}
 .active {
   border-bottom: 0.2rem solid var(--primary-brand-color);
   font-weight: bold;
