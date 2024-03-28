@@ -22,6 +22,7 @@ document.addEventListener("click", () => {
 function setBottomPaddingToZero() {
 	if (window.innerWidth > 700) {
 		navigation.style.paddingBottom = "0%";
+		screenBehindMobileNav.remove();
 	}
 }
 
