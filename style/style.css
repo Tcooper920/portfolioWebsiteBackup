@@ -608,6 +608,15 @@ a.close {
 .footer_x_button:hover {
   color: #9933ff;
 }
+a.back-link, a.forward-link {
+  display: inline-flex;
+}
+a.back-link {
+  margin-right: 1rem;
+}
+a.forward-link {
+  margin-left: 1rem;
+}
 .videos {
   width: 95%;
   height: auto;
@@ -716,12 +725,6 @@ p.privacy-message {
   font-size: 0.7em;
   vertical-align: middle;
   display: inline-block;
-}
-.back_button {
-  margin-right: 0.5em;
-}
-.forward_button {
-  margin-left: 0.5em;
 }
 .back_button:hover,
 .forward_button:hover {
