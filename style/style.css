@@ -161,6 +161,8 @@ hr.dotted-line {
 .invisible {
   visibility: hidden;
   cursor: inherit;
+  width: 202px;
+  height: 230px;
 }
 .container {
   width: 100%;
