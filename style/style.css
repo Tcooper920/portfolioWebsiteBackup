@@ -673,11 +673,15 @@ a.forward-link {
 p.privacy-message {
   font-weight: bold;
   color: #ff671b;
-  padding: 0.5rem 0 0.5rem 0;
-  border: solid #ff671b;
+  margin-top: 2rem;
+  padding: 1rem 0rem 1rem 0rem;
+  border-left: 5px solid #ff671b;
   text-align: center;
-  border-width: 1px 0 1px 0;
   margin-top: 0.5rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(235,235,235,1);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(235, 235, 235, 1);
+  box-shadow: 0px 0px 10px 1px rgba(235,235,235,1);
 }
 .privacy-message:before {
   content: "\26A0";
