@@ -358,9 +358,11 @@ a figure {
 .sharebuttons {
   display: none;
   width: 3rem;
-  margin-left: 1rem;
+  padding-top: 1rem;
   position: fixed;
   text-align: center;
+}
+.sharebuttons p {
   color: white;
 }
 .sharebuttons .share-button {
