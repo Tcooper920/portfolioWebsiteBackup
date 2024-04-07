@@ -232,6 +232,7 @@ a.button {
   margin: 0.5rem;
   display: flex;
   width: fit-content;
+  height: auto;
 }
 figure {
   text-align: left;
