@@ -573,7 +573,6 @@ a.close {
 }
 .popup .popup_content {
   text-align: center;
-  padding: 0.8rem;
 }
 .pop_up_description {
   padding-left: 1.5rem;
@@ -742,9 +741,6 @@ p.privacy-message {
 }
 /* Media queries **************************************************************************************/
 @media screen and (min-width: 376px) {
-  .popup .popup_content {
-    padding: 0;
-  }
   .popup {
     width: 100%;
     height: auto;
