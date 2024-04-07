@@ -447,6 +447,7 @@ a figure {
 #email_label input[type="text"],
 #name_label input[type="text"] {
   -webkit-appearance: none;
+  appearance: none;
   margin-top: 0.5em;
   height: 3em;
   padding-left: 0.5em;
@@ -457,6 +458,7 @@ a figure {
 }
 #message {
   -webkit-appearance: none;
+  appearance: none;
   display: block;
   padding: 0.5em 0 0 0.5em;
   box-sizing: border-box;
