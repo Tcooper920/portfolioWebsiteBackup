@@ -57,8 +57,9 @@ a {
 	opacity: unset;
 }
 #mobile-logo {
-	width: 11rem;
 	margin-left: 1rem;
+	display: flex;
+	align-self: center;
 }
 #mobile-nav-hamburger {
 	flex-direction: row;
@@ -201,25 +202,18 @@ address {
 address > * {
 	margin: 0.5rem;
 }
-.address-divider {
-	display: none;
-	border: 0;
-	background-color: #777676;
-	width: 1px;
-	height: 1rem;
-}
 .footer-contact-info {
 	flex-direction: column;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
-#footer-bottom-bar {
-	font-size: 0.75rem;
+#footer-bottom-bar p {
+	font-size: 1rem;
 	text-align: center;
 	color: gray;
 	background-color: #1e1e1e;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding: 2rem;
+	margin-bottom: 0;
 }
 .footer-social-media-tags {
 	border-top: 1px solid #777676;
@@ -463,20 +457,6 @@ a.close {
 	font-size: large;
 	margin-top: 4em;
 }
-.popup .close {
-	position: absolute;
-	top: 1rem;
-	right: 1.5rem;
-	transition: all 200ms;
-	font-size: 2rem;
-	font-weight: bold;
-	text-decoration: none;
-	color: #333;
-	font-family: Helvetica, Arial, sans-serif;
-}
-.popup .close:hover {
-	color: #9933ff;
-}
 .popup .popup-content {
 	text-align: center;
 }
@@ -521,12 +501,20 @@ a.close {
 	align-self: baseline;
 	color: white;
 }
-.pop-up-footer > a:hover {
+.pop-up-footer > a:hover,
+.popup .close:hover {
 	opacity: 0.5;
+	transition: all 200ms;
 }
-.pop-up-footer svg {
+.pop-up-footer svg,
+.popup .close img {
 	width: 2.5rem;
-	height: auto;
+	height: 2.5rem;
+}
+.popup .close {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
 }
 .videos {
 	width: 95%;
@@ -536,7 +524,7 @@ a.close {
 	margin-bottom: 2em;
 	clear: both;
 }
-.popup img {
+.popup-content img {
 	margin: 0 auto;
 	margin-top: 2em;
 	height: auto;
