@@ -11,9 +11,7 @@ const numberOfBackwardButtons = allPortfolioBackwardButtons.length;
 document.location.href = "#";
 
 /* Pause videos when "x" or [next] arrow buttons are clicked in pop-up. */
-var numXButtons = document.querySelectorAll(
-	".footer-x-button, .close, .forward-button, .back-button"
-);
+var numXButtons = document.querySelectorAll(".footer-x-button, .close, .forward-button, .back-button");
 for (let z = 0; z < numXButtons.length; z++) {
 	numXButtons[z].addEventListener("click", pauseAllVideos);
 }
@@ -47,7 +45,7 @@ function loadImagesPopup(pieceNumber) {
 document.addEventListener(
 	"click",
 	function (event) {
-		for (var counter = 0; counter <= 12; counter++) {
+		for (var counter = 0; counter <= 36; counter++) {
 			if (event.target.matches(".piece-" + counter)) {
 				loadImagesPopup(counter);
 			} else if (event.target.closest(".piece-" + counter)) {
