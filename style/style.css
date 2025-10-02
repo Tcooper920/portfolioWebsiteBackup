@@ -118,7 +118,6 @@ nav a {
 }
 nav a:hover {
 	color: var(--primary-brand-color);
-	font-weight: bold;
 }
 .expand {
 	padding-bottom: 22rem;
