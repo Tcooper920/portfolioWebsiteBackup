@@ -1,4 +1,5 @@
 /* Global variables */
+const totalNumberOfPortfolioPieces = document.querySelectorAll("#responsive-figure-container .button").length;
 const allUnloadedImageTags = document.querySelectorAll(".popup-content img");
 const allPortfolioFigureTagLinks = document.querySelectorAll("a.button");
 const numberOfFigureTagLinks = allPortfolioFigureTagLinks.length;
@@ -41,11 +42,11 @@ function loadImagesPopup(pieceNumber) {
 	}
 }
 
-/* Listen to all clicks on the document for each of the 12 thumbnails that may be clicked (loop through all 12 portfolio pieces). */
+/* Listen to all clicks on the document for each of the thumbnails that may be clicked (loop through all portfolio pieces). */
 document.addEventListener(
 	"click",
 	function (event) {
-		for (var counter = 0; counter <= 36; counter++) {
+		for (var counter = 0; counter <= totalNumberOfPortfolioPieces; counter++) {
 			if (event.target.matches(".piece-" + counter)) {
 				loadImagesPopup(counter);
 			} else if (event.target.closest(".piece-" + counter)) {
