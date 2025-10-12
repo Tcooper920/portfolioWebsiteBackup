@@ -17,7 +17,7 @@ export function setupMobileNavigationFunctionality() {
 
 	/* If clicking outside of the nav menu, and if the nav menu is already open, close the mobile nav menu. */
 	document.addEventListener("click", () => {
-		if (navigation.clientHeight !== 0 && window.innerWidth <= 900) {
+		if (navigation.clientHeight !== 0 && window.innerWidth <= 999) {
 			navigation.className = "collapse";
 			navigationMenuItems.classList.add("hide");
 			screenBehindMobileNav.remove();

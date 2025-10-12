@@ -7,7 +7,7 @@
 	--primary-brand-color: #844dca;
 	--secondary-brand-color: #df7b17;
 	--link-color: #3585c3;
-	--standard-text-color: #3b3b3b;
+	--standard-text-color: #2b2b2b;
 }
 body {
 	background: repeating-linear-gradient(45deg, #2e2e2e, #2e2e2e 4px, #3d3d3d 5px, #3d3d3d 6.5px);
@@ -51,6 +51,10 @@ a {
 	color: var(--link-color);
 	text-decoration: none;
 }
+main a:hover {
+	color: var(--standard-text-color);
+	text-decoration: underline;
+}
 #logo {
 	display: none;
 	justify-content: flex-end;
@@ -68,7 +72,7 @@ a {
 #mobile-nav-hamburger {
 	flex-direction: row;
 	display: inline-flex;
-	padding: 0.5rem 0 0.5rem 0;
+	padding: 1rem 0 1rem 0;
 	position: fixed;
 	align-items: center;
 	top: 0;
@@ -81,10 +85,13 @@ a {
 	z-index: 9999;
 }
 #hamburger-icon {
-	flex: 1;
-	margin-right: 0.5rem;
+	margin-left: auto;
+	margin-right: 1rem;
 	cursor: pointer;
 	text-align: right;
+}
+.active a {
+	color: var(--primary-brand-color);
 }
 /* External link icon */
 svg.svg-inline--fa.fa-external-link-alt.fa-w-18.external-link-icon {
@@ -98,7 +105,7 @@ nav {
 	-moz-box-shadow: 0px 0px 16px -3px rgba(0, 0, 0, 0.6);
 	box-shadow: 0px 0px 16px -3px rgba(0, 0, 0, 0.6);
 	margin: 0;
-	margin-top: 3.4rem;
+	margin-top: 4.4rem;
 	background: white;
 	position: fixed;
 	width: 100%;
@@ -141,13 +148,6 @@ nav a:hover {
 	width: 100%;
 	z-index: 99;
 	opacity: 0.5;
-}
-.active {
-	border-bottom: 0.3rem solid var(--primary-brand-color);
-}
-.active a {
-	color: var(--primary-brand-color);
-	margin-bottom: -0.3rem;
 }
 .white-logo {
 	width: 15rem;
@@ -656,6 +656,27 @@ p.privacy-message {
 	}
 }
 @media screen and (min-width: 901px) {
+	.list-flex-container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+@media screen and (min-width: 950px) {
+	.about-flex-container {
+		gap: 3rem;
+	}
+	.sharebuttons {
+		margin-left: 3em;
+	}
+	#responsive-figure-container {
+		grid-template-columns: repeat(4, min-content);
+	}
+}
+@media screen and (min-width: 960px) {
+	.standard-page-container {
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 1000px) {
 	#mobile-nav-hamburger {
 		display: none;
 	}
@@ -680,24 +701,11 @@ p.privacy-message {
 		color: var(--standard-text-color);
 		text-decoration: none;
 	}
-	.list-flex-container {
-		grid-template-columns: repeat(4, 1fr);
+	.active {
+		border-bottom: 0.3rem solid var(--primary-brand-color);
 	}
-}
-@media screen and (min-width: 950px) {
-	.about-flex-container {
-		gap: 3rem;
-	}
-	.sharebuttons {
-		margin-left: 3em;
-	}
-	#responsive-figure-container {
-		grid-template-columns: repeat(4, min-content);
-	}
-}
-@media screen and (min-width: 960px) {
-	.standard-page-container {
-		margin: 0 auto;
+	.active a {
+		margin-bottom: -0.3rem;
 	}
 }
 @media screen and (min-width: 1160px) {
