@@ -38,6 +38,13 @@ h3 {
 	font-weight: 500;
 	margin-bottom: 1.5rem;
 }
+.portfolio-h1-header {
+	font-weight: 600;
+	grid-column: span 2;
+	color: white;
+	margin-left: 0.5rem;
+	margin-bottom: 1rem;
+}
 p {
 	color: var(--standard-text-color);
 	font-size: 1.1rem;
@@ -260,6 +267,7 @@ a.button:hover {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	text-decoration: none;
 }
 figure img {
 	max-width: 10rem;
@@ -589,6 +597,9 @@ p.privacy-message {
 }
 /* Media queries **************************************************************************************/
 @media screen and (min-width: 376px) {
+	.portfolio-h1-header {
+		margin-left: 0.5rem;
+	}
 	.popup {
 		width: 100%;
 		height: auto;
@@ -596,6 +607,9 @@ p.privacy-message {
 	}
 }
 @media screen and (min-width: 481px) {
+	.portfolio-h1-header {
+		margin-left: 1rem;
+	}
 	a.close {
 		margin-top: auto;
 		margin-bottom: auto;
@@ -645,6 +659,9 @@ p.privacy-message {
 	}
 }
 @media screen and (min-width: 701px) {
+	.portfolio-h1-header {
+		grid-column: span 3;
+	}
 	#responsive-figure-container {
 		grid-template-columns: repeat(3, min-content);
 	}
@@ -661,6 +678,9 @@ p.privacy-message {
 	}
 }
 @media screen and (min-width: 950px) {
+	.portfolio-h1-header {
+		grid-column: span 4;
+	}
 	.about-flex-container {
 		gap: 3rem;
 	}
@@ -677,6 +697,9 @@ p.privacy-message {
 	}
 }
 @media screen and (min-width: 1000px) {
+	.portfolio-h1-header {
+		display: none;
+	}
 	#mobile-nav-hamburger {
 		display: none;
 	}
