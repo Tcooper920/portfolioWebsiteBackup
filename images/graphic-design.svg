@@ -1,36 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 543.69 543.69" style="enable-background:new 0 0 543.69 543.69;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#E0E0E0;stroke:#6C6CE0;stroke-width:4.6987;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#6C6CE0;stroke-width:10.3149;stroke-miterlimit:10;}
-	.st2{fill:#6C6CE0;}
-	.st3{fill:none;stroke:#6C6CE0;stroke-width:4.6987;stroke-miterlimit:10;}
-	.st4{fill:#E0E0E0;}
-	.st5{fill:#FFFFFF;stroke:#6C6CE0;stroke-width:10.3149;stroke-miterlimit:10;}
-	.st6{fill:none;stroke:#6C6CE0;stroke-width:8;stroke-miterlimit:10;}
-	.st7{fill:none;stroke:#6C6CE0;stroke-width:4.6987;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st8{fill:none;stroke:#6C6CE0;stroke-width:10.3149;stroke-linecap:round;stroke-linejoin:round;}
-	.st9{fill:none;stroke:#6C6CE0;stroke-width:10.3149;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,20.157;}
-	.st10{fill:#6C6CE0;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
-</style>
-<g>
-	<path class="st4" d="M252.09,187.98v89.82h89.82C341.91,228.2,301.7,187.98,252.09,187.98z"/>
-	<line class="st3" x1="162.27" y1="157.89" x2="162.27" y2="397.73"/>
-	<path class="st6" d="M341.91,277.81c0,49.61-40.22,89.82-89.82,89.82s-89.82-40.22-89.82-89.82s40.22-89.82,89.82-89.82"/>
-	<rect x="252.09" y="133.81" class="st1" width="143.99" height="143.99"/>
-	<g>
-		<g>
-			<line class="st8" x1="252.09" y1="187.98" x2="252.09" y2="187.98"/>
-			<path class="st9" d="M272.09,190.22c36.8,8.37,65.02,39.33,69.27,77.53"/>
-			<line class="st8" x1="341.91" y1="277.81" x2="341.91" y2="277.81"/>
-		</g>
-	</g>
-	<rect x="237.43" y="352.97" class="st10" width="29.32" height="29.32"/>
-	<rect x="147.61" y="263.15" class="st10" width="29.32" height="29.32"/>
-	<circle class="st2" cx="162.27" cy="157.89" r="12.15"/>
-	<circle class="st2" cx="162.27" cy="397.73" r="12.15"/>
-</g>
-<polyline class="st1" points="396.08,374.87 396.08,406.34 364.62,406.34 "/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 543.6900024 543.6900024">
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: #844dca;
+      }
+
+      .st2, .st3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .st2, .st3, .st4, .st5, .st6 {
+        fill: none;
+        stroke: #844dca;
+      }
+
+      .st2, .st3, .st5 {
+        stroke-width: 10.3149004px;
+      }
+
+      .st7 {
+        fill: #eaeaea;
+      }
+
+      .st3 {
+        stroke-dasharray: 0 20.1569996;
+      }
+
+      .st4 {
+        stroke-width: 4.6987px;
+      }
+
+      .st4, .st5, .st6, .st1 {
+        stroke-miterlimit: 10;
+      }
+
+      .st6 {
+        stroke-width: 8px;
+      }
+
+      .st1 {
+        stroke: #fff;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="st7" d="M252.0899963,187.9799957v89.8199921h89.8200073c0-49.5999908-40.2099915-89.8199921-89.8200073-89.8199921Z"/>
+    <line class="st4" x1="162.2700043" y1="157.8899994" x2="162.2700043" y2="397.730011"/>
+    <path class="st6" d="M341.9100037,277.8099976c0,49.6099854-40.2200012,89.8200073-89.8200073,89.8200073s-89.8200073-40.2200012-89.8200073-89.8200073,40.2200012-89.8200073,89.8200073-89.8200073"/>
+    <rect class="st5" x="252.0899963" y="133.8099976" width="143.9900208" height="143.9899902"/>
+    <g>
+      <line class="st2" x1="252.0899963" y1="187.9799957" x2="252.0899963" y2="187.9799957"/>
+      <path class="st3" d="M272.0899963,190.2200012c36.7999878,8.3699951,65.019989,39.3300018,69.269989,77.5299988"/>
+      <line class="st2" x1="341.9100037" y1="277.8099976" x2="341.9100037" y2="277.8099976"/>
+    </g>
+    <rect class="st1" x="237.4299927" y="352.9700012" width="29.3200073" height="29.3200073"/>
+    <rect class="st1" x="147.6100006" y="263.1499939" width="29.3199921" height="29.3200073"/>
+    <circle class="st0" cx="162.2700043" cy="157.8899994" r="12.1499939"/>
+    <circle class="st0" cx="162.2700043" cy="397.730011" r="12.1499939"/>
+  </g>
+  <polyline class="st5" points="396.0799866 374.8699951 396.0799866 406.3399963 364.6199951 406.3399963"/>
 </svg>
