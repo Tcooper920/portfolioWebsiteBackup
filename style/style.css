@@ -334,7 +334,7 @@ a figure {
 	background: white;
 	max-width: 50rem;
 	margin: 1rem;
-	padding: 3.5rem 1.5rem 1.5rem 1.5rem;
+	padding: 3.5rem 1.5rem 3.5rem 1.5rem;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -361,6 +361,28 @@ a figure {
 	grid-template-columns: repeat(1, 1fr);
 	list-style-type: none;
 	gap: 1.5rem;
+}
+.three-column-row {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.three-column-row > div {
+	flex: 1;
+	margin: 1.5rem;
+	text-align: center;
+}
+#about-icons-row {
+	background-color: rgb(241 241 241);
+	border-radius: 5px;
+}
+#about-icons-row p {
+	color: var(--primary-brand-color);
+}
+#about-icons-row img {
+	margin-bottom: 1rem;
+	background-color: white;
+	border-radius: 50%;
 }
 button {
 	font-size: 1rem;
@@ -670,6 +692,11 @@ p.privacy-message {
 	}
 	.list-flex-container {
 		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media screen and (min-width: 730px) {
+	.three-column-row {
+		flex-direction: row;
 	}
 }
 @media screen and (min-width: 901px) {
