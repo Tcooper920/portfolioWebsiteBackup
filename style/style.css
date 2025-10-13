@@ -39,6 +39,7 @@ h3 {
 	margin-bottom: 1.5rem;
 }
 .portfolio-h1-header {
+	font-size: 2rem;
 	font-weight: 600;
 	grid-column: span 2;
 	color: white;
