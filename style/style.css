@@ -279,6 +279,7 @@ figure img {
 	display: grid;
 	grid-template-columns: repeat(2, min-content);
 	justify-content: center;
+	gap: 0.5rem;
 }
 .portfolio-image {
 	display: block;
@@ -687,6 +688,7 @@ p.privacy-message {
 	}
 	#responsive-figure-container {
 		grid-template-columns: repeat(3, min-content);
+		gap: 0rem;
 	}
 	.standard-page-container {
 		padding: 3.5rem 4rem 4rem 4rem;
