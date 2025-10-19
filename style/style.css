@@ -515,16 +515,16 @@ a.close {
 	right: 1rem;
 }
 .videos {
-	width: 95%;
+	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-top: 0rem;
+	margin-bottom: 0rem;
 	clear: both;
 }
 .popup-content img {
 	margin: 0 auto;
-	margin-top: 2em;
+	margin-top: 5rem;
 	height: auto;
 	max-width: 100%;
 	display: block;
@@ -694,6 +694,11 @@ p.privacy-message {
 @media screen and (min-width: 730px) {
 	.three-column-row {
 		flex-direction: row;
+	}
+	.videos {
+		max-width: 75%;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 	}
 }
 @media screen and (min-width: 901px) {
