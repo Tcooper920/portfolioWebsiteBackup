@@ -104,7 +104,7 @@ main a:hover {
 /* External link icon */
 svg.svg-inline--fa.fa-external-link-alt.fa-w-18.external-link-icon {
 	width: 0.9rem;
-	margin-left: 0.25rem;
+	margin-left: 0.1rem;
 }
 nav {
 	font-size: 1rem;
@@ -470,7 +470,7 @@ a.close {
 	font-size: 1rem;
 	padding-left: 15%;
 	padding-right: 15%;
-	padding-top: 2.5rem;
+	padding-top: 3.5rem;
 	padding-bottom: 2rem;
 	margin-top: 4rem;
 	background-color: #f9f9f9;
@@ -568,20 +568,14 @@ a.close {
 	margin-bottom: 0;
 }
 p.privacy-message {
-	font-weight: bold;
-	color: #ff671b;
+	color: gray;
 	margin-top: 2rem;
 	padding: 1rem;
-	border-left: 5px solid #ff671b;
-	margin-top: 0.5rem;
+	border-left: 0.15rem solid gray;
 	border-radius: 5px;
 	-webkit-box-shadow: 0px 0px 10px 1px rgba(235, 235, 235, 1);
 	-moz-box-shadow: 0px 0px 10px 1px rgba(235, 235, 235, 1);
 	box-shadow: 0px 0px 10px 1px rgba(235, 235, 235, 1);
-}
-.privacy-message:before {
-	content: "\26A0";
-	padding-right: 0.5rem;
 }
 #back-to-top {
 	position: fixed;
