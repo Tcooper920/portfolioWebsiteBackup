@@ -754,7 +754,7 @@ p.privacy-message {
 		text-decoration: none;
 	}
 	.active {
-		border-bottom: 0.3rem solid var(--primary-brand-color);
+		border-bottom: 0.35rem solid var(--primary-brand-color);
 	}
 	.active a {
 		margin-bottom: -0.3rem;
