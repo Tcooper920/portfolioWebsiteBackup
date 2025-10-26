@@ -100,6 +100,7 @@ main a:hover {
 }
 .active a {
 	color: var(--primary-brand-color);
+	font-weight: bold;
 }
 /* External link icon */
 svg.svg-inline--fa.fa-external-link-alt.fa-w-18.external-link-icon {
@@ -758,6 +759,7 @@ p.privacy-message {
 	}
 	.active a {
 		margin-bottom: -0.3rem;
+		font-weight: normal;
 	}
 }
 @media screen and (min-width: 1160px) {
