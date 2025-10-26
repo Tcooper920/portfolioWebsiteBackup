@@ -59,6 +59,10 @@ a {
 	color: var(--link-color);
 	text-decoration: none;
 }
+p a,
+.standard-page-container a {
+	font-weight: bold;
+}
 main a:hover {
 	color: var(--standard-text-color);
 	text-decoration: underline;
@@ -389,24 +393,24 @@ a figure {
 	background-color: white;
 	border-radius: 50%;
 }
-button {
+.button-styling {
 	font-size: 1rem;
 	font-weight: bold;
-	margin-top: 2em;
+	display: inline-block;
 	background-color: var(--secondary-brand-color);
-	border: 0;
-	border: 0.1rem solid #d37211;
+	border: 0.15rem solid var(--secondary-brand-color);
 	color: white;
-	padding: 1rem;
-	letter-spacing: 0.1em;
+	padding: 1rem 2rem 1rem 2rem;
+	margin-top: 1rem;
+	letter-spacing: 0.1rem;
 	-webkit-border-radius: 999rem;
 	-moz-border-radius: 999rem;
 	border-radius: 999rem;
-	width: 100%;
 	transition: background-color 0.5s;
 }
-button:hover {
-	background-color: #b8620c;
+.button-styling:hover {
+	background-color: white;
+	text-decoration: none;
 	cursor: pointer;
 }
 .overlay {
@@ -477,9 +481,6 @@ a.close {
 	padding-bottom: 2rem;
 	margin-top: 4rem;
 	background-color: #f9f9f9;
-}
-.piece-description a {
-	font-weight: bold;
 }
 .remove-top-margin {
 	margin-top: 0px;
@@ -615,6 +616,11 @@ p.privacy-message {
 }
 .portfolio-page-numbers > a {
 	padding: 0.5rem 1rem 0.5rem 1rem;
+}
+#page-not-found-error-graphic {
+	max-width: 29.5rem;
+	margin-top: -3.5rem;
+	margin-bottom: -3.5rem;
 }
 @keyframes fade-in {
 	from {
