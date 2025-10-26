@@ -17,21 +17,21 @@ export function setupMobileNavigationFunctionality() {
 
 	/* If clicking outside of the nav menu, and if the nav menu is already open, close the mobile nav menu. */
 	document.addEventListener("click", () => {
-		if (navigation.clientHeight !== 0 && window.innerWidth <= 999) {
+		if (navigation.clientHeight !== 0 && window.innerWidth <= 1050) {
 			navigation.className = "collapse";
 			navigationMenuItems.classList.add("hide");
 			screenBehindMobileNav.remove();
 		}
 	});
 
-	/* If window grows larger than 700px wide, hide mobile nav dropdown menu. */
+	/* If window grows larger than 1050px wide, hide mobile nav dropdown menu. */
 	function setBottomPaddingToZero() {
-		if (window.innerWidth > 900) {
+		if (window.innerWidth > 1050) {
 			navigation.className = "collapse";
 			navigationMenuItems.classList.remove("hide");
 			screenBehindMobileNav.remove();
 		}
-		if (window.innerWidth <= 900 && navigation.style.paddingBottom === "0%") {
+		if (window.innerWidth <= 1050 && navigation.style.paddingBottom === "0%") {
 			navigationMenuItems.classList.add("hide");
 		}
 	}
