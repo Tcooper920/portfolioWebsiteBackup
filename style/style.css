@@ -281,6 +281,7 @@ figure img {
 	grid-template-columns: repeat(2, min-content);
 	justify-content: center;
 	gap: 0.5rem;
+	animation: fade-in 0.6s;
 }
 .portfolio-image {
 	display: block;
@@ -341,6 +342,7 @@ a figure {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	animation: fade-in 0.6s;
 }
 .about-flex-container {
 	display: flex;
@@ -613,6 +615,15 @@ p.privacy-message {
 }
 .portfolio-page-numbers > a {
 	padding: 0.5rem 1rem 0.5rem 1rem;
+}
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
 /* Media queries **************************************************************************************/
 @media screen and (min-width: 376px) {
