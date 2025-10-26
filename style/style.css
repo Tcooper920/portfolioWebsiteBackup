@@ -726,7 +726,7 @@ p.privacy-message {
 		margin: 0 auto;
 	}
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
 	.portfolio-h1-header {
 		display: none;
 	}
@@ -748,6 +748,7 @@ p.privacy-message {
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
+		min-width: 6rem;
 	}
 	nav a {
 		padding: 0rem 1rem 0rem 1rem;
