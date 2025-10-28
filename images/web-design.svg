@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 543.6900024 543.6900024">
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #844dca;
+      }
+
+      .st1, .st2 {
+        stroke-width: 4.6987px;
+      }
+
+      .st1, .st2, .st3 {
+        stroke: #844dca;
+        stroke-miterlimit: 10;
+      }
+
+      .st1, .st3 {
+        fill: none;
+      }
+
+      .st2 {
+        fill: #eaeaea;
+      }
+
+      .st3 {
+        stroke-width: 10.3149004px;
+      }
+    </style>
+  </defs>
+  <rect class="st2" x="160.2799988" y="199.6600037" width="223.1399841" height="52.1999969"/>
+  <rect class="st3" x="137.3500061" y="137.3500061" width="268.9899902" height="268.9899902"/>
+  <rect class="st3" x="137.3500061" y="137.3500061" width="268.9899902" height="39.3899994"/>
+  <circle class="st0" cx="158.7100067" cy="157.0500031" r="6.6300049"/>
+  <circle class="st0" cx="180.1499939" cy="157.0500031" r="6.6300049"/>
+  <circle class="st0" cx="201.6000061" cy="157.0500031" r="6.6300049"/>
+  <rect class="st1" x="160.2799988" y="274.7900085" width="131.5700073" height="111.5500183"/>
+  <rect class="st2" x="311.8500061" y="274.7900085" width="71.5700073" height="111.5500183"/>
+  <line class="st1" x1="160.2799988" y1="274.7900085" x2="291.8500061" y2="386.3399963"/>
+  <line class="st1" x1="291.8500061" y1="274.7900085" x2="160.2799988" y2="386.3399963"/>
+</svg>

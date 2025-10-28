@@ -2,16 +2,16 @@
 .DS_store
 
 # ignore video folder with files typically exceeding 100MB (too large for gitHub)
-videos/
+videos/*
 
 _notes/
-
-paypal-banner.ai
-
-apps/
 
 */_notes/dwsync.xml
 
 */dwsync.xml
 
 *dwsync.xml
+
+.vscode
+
+images/source-files/
