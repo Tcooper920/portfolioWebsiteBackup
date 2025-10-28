@@ -742,6 +742,10 @@ p.privacy-message {
 	.standard-page-container {
 		margin: 0 auto;
 	}
+	a.button {
+		width: 12.625rem; /* Reduce CLS */
+		height: 13.922rem; /* Reduce CLS */
+	}
 }
 @media screen and (min-width: 1050px) {
 	.portfolio-h1-header {
