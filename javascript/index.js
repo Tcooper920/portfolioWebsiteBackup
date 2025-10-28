@@ -1,4 +1,4 @@
-/* Main utilities to include on every webpage. */
+/* Main utilities to include on every webpage of the site. */
 
 import { setupMobileNavigationFunctionality } from "./includes/nav-bar.js";
 import { scrollToTopFunctionality } from "./includes/scroll-to-top-btn.js";
