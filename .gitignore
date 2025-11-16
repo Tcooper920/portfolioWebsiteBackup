@@ -1,7 +1,7 @@
-# ignore mac system files
+# Ignore mac system files
 .DS_store
 
-# ignore video folder with files typically exceeding 100MB (too large for gitHub)
+# Ignore video folder with files typically exceeding 100MB (too large for gitHub)
 videos/*
 
 _notes/*
@@ -17,3 +17,7 @@ dwsync.xml
 .vscode
 
 images/source-files/
+
+# Ignore config files with API keys, etc.
+*config.php
+*config.js
