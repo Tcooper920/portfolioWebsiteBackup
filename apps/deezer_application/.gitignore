@@ -1,0 +1,23 @@
+# ignore mac system files
+.DS_store
+
+# ignore config files with API keys
+.env
+
+# ignore video folder with files typically exceeding 100MB (too large for gitHub)
+videos/*
+
+_notes/*
+
+*/_notes/dwsync.xml
+
+*/dwsync.xml
+
+*dwsync.xml
+
+dwsync.xml
+
+.vscode
+
+node_modules/
+

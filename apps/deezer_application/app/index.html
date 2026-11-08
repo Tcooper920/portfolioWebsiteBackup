@@ -1,0 +1,77 @@
+<DOCTYPE! html>
+	<html>
+
+		<head>
+			<title>Music player</title>
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<!-- Google font used -->
+			<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+			<!-- Fontawesome icons-->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+			<!-- Bootstrap icons -->
+			<link rel="stylesheet"
+				href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+			<!-- Primary app CSS -->
+			<link rel="stylesheet" type="text/css" href="css/index.css" />
+		</head>
+
+		<body>
+			<div class="formsWrapper">
+				<div class="form searchForm">
+					<header>
+						<h1>Find songs</h1>
+					</header>
+					<!--search field-->
+					<div class="textFieldContainer">
+						<input id="artistName" type="text" placeholder="Search for an artist" />
+						<button class="button primary-button" id="searchButton" type="button">Search</button>
+					</div>
+				</div>
+
+				<div class="form jukeboxForm">
+					<!--jukebox-->
+					<div class="textFieldContainer">
+						<input id="currentSongField" type="text" placeholder="No song selected" readonly
+							aria-label="Currently playing song" aria-live="polite" />
+					</div>
+					<div id="audioControlContainer">
+						<button type="button" class="button primary-button fa-input" id="previousButton"
+							aria-label="Previous song"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+						<button type="button" class="button primary-button fa-input" id="playButton"
+							aria-label="Play song"><i class="fa fa-play" aria-hidden="true"></i></button>
+						<button type="button" class="button primary-button fa-input" id="nextButton"
+							aria-label="Next song"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+					</div>
+					<div class="progressbar-container">
+						<div id="playtime-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+							aria-valuenow="0" aria-label="Song progress">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="buttonContainer tabList" role="tablist" aria-orientation="horizontal">
+				<button role="tab" aria-controls="searchResultsContainer" aria-selected="false" tabindex="-1"
+					id="viewSearchPlayListBtn" class="button disable-tab">
+					Search results
+				</button>
+				<button role="tab" aria-controls="searchResultsContainer" aria-selected="false" tabindex="-1"
+					id="viewCustomPlayListBtn" class="button disable-tab">
+					My playlist
+				</button>
+			</div>
+			<div class="songs-wrapper">
+				<div class="show-hide-button-container">
+					<div><button id="hideAlbumCoversBtn" class="button secondary-button fa-input hide"><i
+								class="bi bi-eye-slash-fill eye-icon"></i><span>Hide album
+								covers</span></button>
+					</div>
+				</div>
+				<div role="tabpanel" aria-labelledby="viewSearchPlayListBtn" id="searchResultsContainer">
+					<p class="searchResultsPlaceholderText errorMessages">Search for an artist above.</p>
+				</div>
+			</div>
+			<script type="module" src="../built/js/index.js"></script>
+		</body>
+
+	</html>

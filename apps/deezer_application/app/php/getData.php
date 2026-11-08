@@ -1,8 +1,17 @@
 <?php
 
-require("config.php"); // Include API keys
+// Parse .env config file
+$env = parse_ini_file('../../.env', TRUE);
 
-$artist_name = $_GET['q'] ?? '';
+$myKey = $env['API_KEY'];
+
+$artist_name = trim($_GET['q'] ?? '');
+
+if ($artist_name === "") {
+    http_response_code(400);
+    echo json_encode(["error" => "Empty search."]);
+    exit;
+}
 
 $ch = curl_init(); // cURL handle
 
