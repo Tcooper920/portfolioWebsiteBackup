@@ -1,0 +1,558 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Varela Round", sans-serif;
+}
+
+/* global color variables */
+:root {
+	--main-text-color: #616161;
+	--song-container-hover-text-color: #0d0d0d;
+	--form-field-text: #6d7f9e;
+	--form-field-color: rgb(232, 240, 254);
+	--primary-color: #58a593;
+	--primary-active-button-color: #306c5e;
+	--delete-color: rgb(255, 59, 59);
+	--lightgray-color: rgb(211, 211, 211);
+	--darkgray-color: #454545;
+}
+
+h1 {
+	color: var(--song-container-hover-text-color);
+	font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+/* disable browser default styling */
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.searchResultsPlaceholderText {
+	color: var(--main-text-color);
+	text-align: center;
+	position: absolute; 
+	left: 0; 
+	right: 0;
+}
+
+/* fontawesome icon class for audio buttons */
+.fa-input {
+	font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.fa.fa-check {
+	margin-left: 0.5rem;
+}
+
+/* placeholder text styling */
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: var(--form-field-text);
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: var(--form-field-text);
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: var(--form-field-text);
+}
+
+.formsWrapper {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background-color: #383838;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	border-bottom: 0.2rem solid white;
+	border-radius: 0px 0px 70px 70px;
+	-moz-border-radius: 0px 0px 70px 70px;
+	-webkit-border-radius: 0px 0px 70px 70px;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	transition: background-image 1s;
+}
+
+.form {
+	background-color: white;
+	filter: none;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	max-width: 40rem;
+	margin: 0 auto;
+	border: 0;
+	-webkit-box-shadow: 0px 0px 9px 1px #26262680;
+	-moz-box-shadow: 0px 0px 9px 1px #26262680;
+	box-shadow: 0px 0px 9px 1px #26262680;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.form h1 {
+	margin-left: .25rem;
+}
+
+.textFieldContainer {
+	display: block;
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
+}
+
+button {
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+
+.button {
+	flex: 1;
+	margin: 0.25rem;
+	padding: 0.5rem;
+	padding-left: 1rem;
+    padding-right: 1rem;
+	border: 0;
+	background-color: white;
+	color: white;
+	font-weight: bold;
+	font-size: 0.9rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.primary-button {
+	padding: .6rem;
+	background-color: var(--primary-color);
+	color: white;
+}
+
+.primary-button:hover {
+	background-color: var(--primary-active-button-color);
+	transition: background-color .1s linear;
+}
+
+.secondary-button {
+	color: var(--primary-color);
+	border: 0.15rem solid var(--primary-color);
+}
+
+.secondary-button:hover {
+	background-color: var(--primary-color);
+	color: white;
+	transition: background-color .1s linear, color .1s linear;
+}
+
+.songContainer:hover:has(.addToPlayListBtn:hover) {
+	background-color: white;
+}
+
+.songContainer > p {
+    display: flex;
+}
+
+#searchResultsContainer .songContainer {
+	border-bottom: 1px solid #d0d0d0;		
+}
+
+#searchResultsContainer.hide-album-covers .songContainer {
+	border-bottom: 0;
+	border-radius: 5px;
+}
+
+#searchResultsContainer .activeSongContainer {
+	border-bottom: 0;
+}
+
+.progressbar-container {
+	background-color: var(--lightgray-color);
+    height: .5rem;
+    margin-top: .75rem;
+    margin-left: .25rem;
+    margin-right: .25rem;
+    border-radius: 999px;
+	overflow: hidden;
+}
+
+#playtime-progress-bar {
+	height: .5rem;
+	width: 0;
+	background-color: var(--darkgray-color);
+}
+
+#viewSearchPlayListBtn,
+#viewCustomPlayListBtn {
+	color: var(--main-text-color);
+	font-size: 1rem;
+	margin: 0;
+    border: 0;
+	border-bottom: .15rem solid lightgrey;
+	background-color: white;
+	padding-bottom: 1rem;
+	border-radius: 0;
+}
+
+#viewSearchPlayListBtn.activeButton,
+#viewCustomPlayListBtn.activeButton {
+	font-weight: bold;
+	color: var(--primary-color);
+	padding-bottom: .70rem;
+	border-bottom: .45rem solid var(--primary-color);
+	cursor: default;
+}
+
+#viewSearchPlayListBtn:hover, 
+#viewCustomPlayListBtn:hover {
+	color: var(--primary-color);
+}
+
+.disable-tab, 
+#viewSearchPlayListBtn.disable-tab:hover, 
+#viewCustomPlayListBtn.disable-tab:hover {
+	color: var(--main-text-color) ;
+	opacity: .50;
+	cursor: default;
+}
+
+.addToPlayListBtn {
+	font-size: .85rem;
+	width: 100%;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	margin-top: 1rem;
+	color: var(--primary-color);
+	border: 0.15rem solid var(--primary-color);
+	background-color: white;
+	cursor: pointer;
+}
+
+.addToPlayListBtn.activeButton {
+	background-color: var(--primary-color);
+	color: white;
+}
+
+.addToPlayListBtn:hover {
+	background-color: var(--primary-color);
+	color: white;
+	transition: background-color .1s linear, color .1s linear;
+}
+
+.removeFromCustomPlayList {
+	font-size: .85rem;
+	color: var(--delete-color);
+	width: fit-content;
+	padding: 0.25rem 0.5rem 0.2rem 0.5rem;
+	margin-top: 1rem;
+	border: 0.15rem solid var(--delete-color);
+	background-color: white;
+	cursor: pointer;
+}
+
+.removeFromCustomPlayList:hover {
+	background-color: var(--delete-color);
+	border-color: var(--delete-color);
+	color: white;
+	transition: background-color .1s linear, border-color .1s linear, color .1s linear;
+}
+
+#artistName {
+	color: var(--form-field-text);
+	flex: 3;
+	font-size: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	margin-left: 0.25rem;
+	margin-right: 0;
+	margin-bottom: 0.5rem;
+	border: 0;
+	background-color: var(--form-field-color);
+	border-radius: 5px 0px 0px 5px;
+	-moz-border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+}
+
+#searchButton {
+	font-size: 1rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-left: 0;
+	border-radius: 0px 5px 5px 0px;
+	-moz-border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+}
+
+.jukeboxForm {
+	margin-top: 2rem;
+	overflow: hidden;
+}
+
+#currentSongField {
+	flex: 1;
+	color: var(--form-field-text);
+	font-size: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+	margin-bottom: 0.5rem;
+	border: 0;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	cursor: default;
+}
+
+#audioControlContainer {
+	display: flex;
+}
+
+.buttonContainer {
+	padding-top: 28rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	display: flex;
+	max-width: 36rem;
+	margin: 0 auto;
+}
+
+.show-hide-button-container {
+	padding-bottom: 1.5rem;
+	padding-top: 4rem;
+	padding-left: 3rem;
+    padding-right: 3rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	border-top: none;
+} 
+
+/* Toggle class to show/hide element */
+.hide, #hideAlbumCoversBtn.hide {
+	display: none;
+}
+
+#hideAlbumCoversBtn {
+	display: none;
+	width: 100%;
+	justify-content: center;
+    align-items: center;
+	margin: 0;
+}
+
+.eye-icon {
+	padding-right: .5rem;
+}
+
+/* .hide-album-covers class is toggled to show/hide album covers */
+#searchResultsContainer.hide-album-covers img {
+	display: none;
+}
+
+.hide-album-covers > div {
+	margin: 1rem 1rem 1rem 1rem;
+	padding: 1.5rem;
+	-webkit-box-shadow: 0px 0px 11px 0px #ececec;
+    box-shadow: 0px 0px 11px 0px #ececec;
+}
+
+.songs-wrapper {
+	max-width: 90rem;
+	margin: 0 auto;	
+	padding-left: 2rem;
+	padding-right: 2rem
+}
+
+#searchResultsContainer {
+	background-color: white;
+	padding-bottom: 5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-align: left;
+	display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+	justify-content: center;
+}
+
+.albumCover {
+	width: 5rem;
+	border-radius: 5px;
+	margin-bottom: 1rem;
+}
+
+.songContainer {
+	margin-top: 1rem;
+	text-align: left;
+	color: var(--main-text-color);
+	font-size: 0.8rem;
+	padding: 2rem;
+	display: inline-flex;
+	flex-direction: column;
+	border-radius: 0;
+}
+
+.fadeIn {
+	animation: fadeIn .3s linear;
+}
+
+.fadeOut {
+	animation: fadeOut .5s linear;
+}
+
+
+.songContainer:hover {
+	color: var(--song-container-hover-text-color);
+	background-color: #e6e6e6;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: color .25s linear, background-color .25s linear;
+}
+
+.songContainer p > * {
+    display: flex;
+	flex-direction: column;
+}
+
+.trackNumber {
+	display: inline-block;
+	margin-bottom: 0.2rem;
+}
+
+.songTitle {
+	font-size: 1.2rem;
+	display: inline-block;
+	margin-bottom: 1rem;
+}
+
+.song-description {
+	margin-left: 1rem;
+}
+
+.hide-album-covers .song-description {
+	margin-left: 0;
+}
+
+.activeSongContainer {
+	color: var(--primary-color);
+	outline: 0.2rem solid var(--primary-color);
+	border-left: 0px;
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+	border-radius: 5px;
+}
+
+.activeSongContainer:hover {
+	color: var(--primary-color);
+	background-color: white;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+/* media queries ******************************************************************************************************/
+
+@media (min-width: 720px) {
+	.show-hide-button-container {
+		border-top: 1px solid var(--lightgray-color);
+	}
+}
+
+@media (min-width: 655px) {
+	#searchResultsContainer .songContainer {
+		border-bottom: 0;		
+	}
+	.albumCover {
+		width: 100%;
+	}
+
+	.songContainer > p {
+    	display: block;
+	}
+
+	.song-description {
+		margin-left: 0rem;
+	}
+
+	#hideAlbumCoversBtn {
+		display: flex;
+	}
+}
+
+@media (min-width: 576px) {
+	.show-hide-button-container {
+		padding-left: 3rem;
+    	padding-right: 3rem;
+	}
+
+	.show-hide-button-container > div {
+		width: auto;
+	}
+
+	#hideAlbumCoversBtn {
+		width: auto;
+	}
+
+	.songContainer {
+		margin-top: 0;
+	}
+
+	.addToPlayListBtn {
+		width: fit-content;
+	}
+
+	.hide-album-covers > div {
+		margin: 2rem 2rem 2rem 2rem;
+	}
+}
+
+@media (min-width: 501px) {
+	.buttonContainer {
+    	padding-top: 26rem;
+	}
+
+	.textFieldContainer {
+		display: flex;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 500px) {
+	#artistName,
+	#searchButton,
+	#currentSongField {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 5px 5px 5px 5px;
+	}
+
+	.formsWrapper {
+		border-radius: 0px 0px 30px 30px;
+	}
+}
+
